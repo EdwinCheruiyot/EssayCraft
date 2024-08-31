@@ -209,17 +209,34 @@ section h2::after {
 
 /* Hero section */
 #hero {
-  background-color: var(--md-sys-color-primary-container);
-  color: var(--md-sys-color-on-primary-container);
+  position: relative;
+  height: 100vh;
   display: flex;
-  align-items: center;
-  padding: 4rem 3rem;
-  margin-top: 0;
+  flex-direction: column;
+  background-color: var(--md-sys-color-primary-container);
+}
+
+.hero-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 60%;
+  overflow: hidden;
+}
+
+.hero-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .hero-content {
-  flex: 1;
-  padding-right: 2rem;
+  position: relative;
+  z-index: 1;
+  padding: 2rem;
+  margin-top: auto;
+  background-color: rgba(255, 255, 255, 0.8);
 }
 
 .hero-content h2 {
@@ -247,11 +264,6 @@ section h2::after {
 .cta-button:hover {
   background-color: var(--md-sys-color-on-primary-container);
   color: var(--md-sys-color-primary-container);
-}
-
-.hero-image {
-  flex: 1;
-  overflow: hidden;
 }
 
 .carousel {
@@ -522,6 +534,7 @@ footer nav a:hover {
 
   .carousel-inner img {
     height: 200px; /* Fixed height for mobile */
+    border-radius: 8px 8px 0 0;
   }
 
   #contact form {
