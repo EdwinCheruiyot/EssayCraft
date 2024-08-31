@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EssayCraft</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <h1 class="logo"><span class="logo-highlight">Essay</span>Craft</h1>
+            <button class="nav-toggle" aria-label="Toggle navigation">
+                &#9776;
+            </button>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#testimonials">Testimonials</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="hero">
+            <div class="hero-content">
+                <h2>Craft Your Perfect Essay</h2>
+                <p>Expert assistance for all your academic writing needs.</p>
+                <a href="#contact" class="cta-button">Get Started</a>
+            </div>
+            <div class="hero-image">
+                <div class="carousel">
+                    <div class="carousel-inner">
+                        <img src="images/hero1.jpg" alt="Student writing an essay">
+                        <img src="images/hero2.jpg" alt="Books and laptop on a desk">
+                        <img src="images/hero3.jpg" alt="Group study session">
+                        <img src="images/hero4.jpg" alt="Library with students studying">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="services">
+            <h2>Our Services</h2>
+            <ul>
+                <li>Essay Writing</li>
+                <li>Research Papers</li>
+                <li>Thesis Assistance</li>
+                <li>Proofreading and Editing</li>
+            </ul>
+        </section>
+
+        <section id="about">
+            <h2>About Us</h2>
+            <p>EssayCraft is dedicated to helping students achieve academic excellence through expert writing assistance and guidance.</p>
+        </section>
+
+        <section id="testimonials">
+            <h2>What Our Clients Say</h2>
+            <div class="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item">
+                        <blockquote class="testimonial">
+                            <p>"EssayCraft helped me improve my writing skills and achieve better grades. Highly recommended!"</p>
+                            <cite>- Sarah K., University Student</cite>
+                        </blockquote>
+                    </div>
+                    <div class="carousel-item">
+                        <blockquote class="testimonial">
+                            <p>"The team at EssayCraft is professional and knowledgeable. They helped me with my research paper, and I got an A!"</p>
+                            <cite>- Michael R., Graduate Student</cite>
+                        </blockquote>
+                    </div>
+                    <div class="carousel-item">
+                        <blockquote class="testimonial">
+                            <p>"I was struggling with my thesis, but EssayCraft provided excellent guidance and support. Thank you!"</p>
+                            <cite>- Emily L., Doctoral Candidate</cite>
+                        </blockquote>
+                    </div>
+                    <div class="carousel-item">
+                        <blockquote class="testimonial">
+                            <p>"The editing service is top-notch. They polished my essay and made it shine. Great attention to detail!"</p>
+                            <cite>- David W., High School Senior</cite>
+                        </blockquote>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact">
+            <h2>Contact Us</h2>
+            <form>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="service">Service:</label>
+                <select id="service" name="service" required>
+                    <option value="">Select a service</option>
+                    <option value="essay_writing">Essay Writing</option>
+                    <option value="research_paper">Research Paper</option>
+                    <option value="thesis_assistance">Thesis Assistance</option>
+                    <option value="proofreading">Proofreading and Editing</option>
+                </select>
+
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required></textarea>
+
+                <button type="submit">Send</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <nav>
+                <a href="#privacy">Privacy Policy</a>
+                <a href="#terms">Terms of Service</a>
+                <a href="#faq">FAQ</a>
+            </nav>
+            <p>&copy; 2023 EssayCraft. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
